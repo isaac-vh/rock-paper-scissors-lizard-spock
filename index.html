@@ -1,0 +1,64 @@
+<!--
+    #################################################
+    #                                               #
+    #     Rock, Paper, Scissors, Lizard, Spock     #
+    #                                               #
+    #################################################    
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>RPSLS</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+        <meta name="description" content="Rock, Paper, Scissors, Lizzard, Spock">
+        <meta name="author" content="Daxterforce">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="source.js"></script>
+
+</head>
+<body>
+
+    <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Rock-Paper-Scissors-Lizard-Spock</h1>
+            <button id="lucky" onClick="playMatch()">Do you feel lucky?</button>
+        </div>
+
+        <div class="match fadeOut">
+            <div class="winner"><h2>Choose an option</h2></div>
+            <div class="figures">
+                <img class="player-figure" src="img/Fire.png" height="150px" width='150px' alt="">
+                <img class="computer-figure" src="img/Fire.png" height="150px" width='150px' alt="">
+            </div>
+        </div>
+        <div class="options">
+            <button class="rock" onclick="cardChosen(this, 'rock')">✊</button>
+            <button class="Paper" onclick="cardChosen(this, 'paper')">✋</button>
+            <button class="Scissors" onclick="cardChosen(this, 'scissors')">✌️</button>
+            <button class="Lizard" onclick="cardChosen(this, 'lizard')">🤏</button>
+            <button class="Spock" onclick="cardChosen(this, 'spock')">🖖</button>
+        </div>
+        <div class="Card">
+            <h2>Chosen Card:</h2>
+            <img id="cardImg" src="" />
+        </div>
+
+    </section>
+</body>
+</html>
